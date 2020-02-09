@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=ABeeZee|Sriracha&display=swap");
+
+body {
+  background-color: #3d3c3c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.js-clock {
+  margin-top: 200px;
+  font-size: 120px;
+  text-shadow: 2px 2px 2px gray;
+  color: #6d4aad;
+}
+
+.js-todos {
+  display: none;
+}
+
+.js-display-name {
+  font-size: 30px;
+  text-shadow: 2px 2px 2px gray;
+  font-weight: bold;
+  display: none;
+  color: #f3ccf7;
+  font-family: "Sriracha", cursive;
+}
+.js-input-form {
+  display: none;
+}
+
+.js-input-name,
+.js-input-todo {
+  margin: 10px 0px;
+  width: 350px;
+  height: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #584545;
+}
+
+.js-input-name:focus,
+.js-input-todo:focus {
+  outline: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px rgb(107, 106, 106);
+}
+
+.js-todo-form {
+  margin: 20px 0px;
+}
+
+.js-todo-list {
+  width: 400px;
+}
+
+.js-todo-list li {
+  margin: 5px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c4c0c0;
+}
+
+.delete-button {
+  margin-left: 10px;
+  padding: 2px 5px;
+  color: red;
+  border: 2px solid rgb(250, 110, 243);
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(242, 170, 248);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.js-weather {
+  font-size: 20px;
+  color: rgb(212, 241, 165);
+  text-shadow: 2px 2px 2px rgb(107, 106, 106);
+  font-family: "Sriracha", cursive;
+}
